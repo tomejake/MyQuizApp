@@ -36,3 +36,26 @@
 
 ## 코드 테스트 (locket)
 - Log 객체를 활용해 테스트 코드를 작성하고, 하단 Logcat 을 통해 메시지를 볼 수 있다.
+
+## 스크롤
+- 전체 객체들을 ScrollView 로 감싸고, viewport 가 전부 보이도록 android:fillViewport="true" 옵션을 준다.
+
+### tools:text="": 실행시 텍스트는 안보이지만 툴에서만 보임
+
+### android:contentDescription : 이미지가 안보일 경우 사용자 편의를 위해 어떤 이미지인지 설명을 작성하는 옵션
+
+### 높이나 너비를 0으로 지정한 경우: 가중치를 사용한다는 뜻
+
+## ProgressBar
+- 진행도를 나타내는 Bar
+- 가중치로 디자인하면 쉽게 디자인 가능
+- android:progress="0"에서 현재 진행도를 나타냄
+- android:max="9" : max 값 지정 가능 (0~9까지로 지정하겠다는 의미)
+- style 로 디자인 변경 가능
+    - 예시: style="?android:attr/progressBarStyleHorizontal"
+- android:indeterminate="false": 진행바가 움직이지 않도록 고정시켜줌
+    - 다운로드 화면같은 경우는 고정시키지 않는게 좋음
+
+## 이미지 불러오기
+- ivImage?.setImageResource(Int값)
+    - 순서대로 이미지 로드
