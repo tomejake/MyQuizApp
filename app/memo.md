@@ -26,3 +26,13 @@
 
 ### style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 - OutlinedBox: 윤곽이 있는 직사각형으로 디자인 변경
+
+
+### 페이지 이동
+1. 새로운 activity 만듬
+2. val intent = Intent(this, 이동할 엑티비티::class.java)
+   startActivity(intent)
+    - 위와 같은 형태로 작성해 intent 를 활용해서 페이지를 이동
+
+## 코드 테스트 (locket)
+- Log 객체를 활용해 테스트 코드를 작성하고, 하단 Logcat 을 통해 메시지를 볼 수 있다.
