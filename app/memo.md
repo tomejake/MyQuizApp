@@ -57,5 +57,22 @@
     - 다운로드 화면같은 경우는 고정시키지 않는게 좋음
 
 ## 이미지 불러오기
-- ivImage?.setImageResource(Int값)
-    - 순서대로 이미지 로드
+- ivImage?.setImageResource(Object.image)
+    - setImageResource 를 활용, 비트맵이나 다른 방법도 존재함
+
+### Typeface
+- 표시되는 문자 모양의 기울임꼴 스타일을 시뮬레이션할지 여부를 확인
+
+### ContextCompat
+- Resource 에서 값을 가져오거나 퍼미션을 확인할 때 사용할 때 SDK 버전을 고려하지 않아도 되도록 (내부적으로 SDK 버전을 처리해둔) 클래스
+``` kotlin
+    background = ContextCompat.getDrawable(
+            this,
+            R.drawable.default_option_border_bg
+        )
+```
+- 위와같은 느낌으로 사용
+
+### 간편한 onClickListener
+- onClickListener 를 상속받고 구현
+- 이벤트가 존재하는 아이템만 onClickListener(this) 라고 지정해줌
