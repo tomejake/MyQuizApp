@@ -76,3 +76,9 @@
 ### 간편한 onClickListener
 - onClickListener 를 상속받고 구현
 - 이벤트가 존재하는 아이템만 onClickListener(this) 라고 지정해줌
+
+### intent.putExtra(Constants.보낼이름, 내용)
+- 다음 엑티비티에 정보를 남기고 싶을때 사용
+
+### intent.get데이터타입Extra(Constants.받을이름)
+- putExtra 로 보낸 값을 받을때 사용

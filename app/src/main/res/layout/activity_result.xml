@@ -47,6 +47,7 @@
             />
 
         <TextView
+            android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -58,6 +59,7 @@
             />
 
         <TextView
+            android:id="@+id/tv_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -68,6 +70,7 @@
             />
 
         <Button
+            android:id="@+id/btnFinish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25sp"
